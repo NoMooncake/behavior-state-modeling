@@ -1,0 +1,2 @@
+seed,n_users,sessions_min,sessions_max,events_min,events_max,noise_rate,span_days
+7,800,5,30,5,60,0.03,30
