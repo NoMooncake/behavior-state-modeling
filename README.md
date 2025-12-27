@@ -1,5 +1,44 @@
 # Decision Path Modeling in E-commerce Sessions
 
+```
+Decision Framework: Path Structure × Commitment Strength
+──────────────────────────────────────────
+
+Browsing-only
+(View / Category → Exit)
+│
+│ low intent
+▼
+Conversion ≈ 3%
+
+──────────────────────────────────────────
+
+Comparison-augmented
+(Views ↔ Compare loops → Exit)
+│
+│ high hesitation
+▼
+Conversion ≈ 2%
+
+──────────────────────────────────────────
+
+Soft commitment
+(Add-to-cart → extended interaction)
+│
+│ tentative commitment
+▼
+Conversion ≈ 2%
+
+──────────────────────────────────────────
+
+Hard commitment
+(Checkout / Purchase → Exit)
+│
+│ decisive boundary
+▼
+Conversion ≈ 37%
+```
+
 This project explores how user decision-making behavior in e-commerce sessions can be better understood through **decision path structure** rather than raw activity metrics.
 
 Using a semi-synthetic clickstream dataset, we demonstrate that *how* and *when* users commit matters far more than *how much* they interact.
@@ -99,6 +138,19 @@ This framework highlights that *commitment strength* is more informative than *c
 **Takeaway:**  
 *Commitment strength is the dominant signal of conversion intent.  
 Soft commitment actions (add-to-cart) behave similarly to non-commitment paths, while hard commitment forms a clear behavioral boundary with dramatically higher conversion efficiency.*
+
+### Detailed Analysis
+
+The full exploratory analysis, including step-by-step reasoning, intermediate findings, and robustness checks, is documented in the following notebook:
+
+- **Exploratory Data Analysis & Decision Path Modeling**  
+  [`notebooks/01_eda.ipynb`](notebooks/01_eda.ipynb)
+
+This notebook contains:
+- Session-level EDA and validation
+- Decision path structure abstraction
+- Commitment semantics refinement
+- Construction of the final decision framework
 
 ---
 
