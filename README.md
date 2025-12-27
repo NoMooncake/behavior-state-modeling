@@ -87,6 +87,19 @@ Based on these findings, we propose a qualitative decision framework:
 
 This framework highlights that *commitment strength* is more informative than *commitment timing* or activity volume.
 
+## Decision Framework (Visual Summary)
+
+| Segment | What it looks like | Conversion | Avg events | Avg hesitation |
+|---|---|---:|---:|---:|
+| **Browsing-only** (no commitment) | View-heavy exploration → exit | **2.9%** | 11.6 | 0.108 |
+| **Comparison-augmented** (no commitment) | Views + compare loops → exit | **2.4%** | 10.4 | **0.238** |
+| **Soft commitment** (add_to_cart) | Add-to-cart present, often tentative | **2.1%** | 10.8 | 0.142 |
+| **Hard commitment** (checkout / purchase) | Checkout/purchase boundary, decisive | **37.2%** | **9.8** | 0.125 |
+
+**Takeaway:**  
+*Commitment strength is the dominant signal of conversion intent.  
+Soft commitment actions (add-to-cart) behave similarly to non-commitment paths, while hard commitment forms a clear behavioral boundary with dramatically higher conversion efficiency.*
+
 ---
 
 ## Implications
